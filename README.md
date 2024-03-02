@@ -1,79 +1,81 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# This is an RN project with BUG
 
-# Getting Started
+I've hit a major bug. 
+After installing the **react-native-webview** dependency, both **web3modal** and **react-native-actions-sheet** crash when I try to open it. 
+So, I'm guessing there's some similarity between web3modal and react-native-actions-sheet causing this issue.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+# ENV
+System:
+  OS: macOS 14.2.1
+  CPU: (10) arm64 Apple M1 Pro
+  Memory: 95.77 MB / 16.00 GB
+  Shell:
+    version: "5.9"
+    path: /bin/zsh
+Binaries:
+  Node:
+    version: 20.9.0
+    path: /usr/local/bin/node
+  Yarn:
+    version: 1.22.19
+    path: /usr/local/bin/yarn
+  npm:
+    version: 9.4.0
+    path: /usr/local/bin/npm
+  Watchman:
+    version: 2024.01.22.00
+    path: /opt/homebrew/bin/watchman
+Managers:
+  CocoaPods:
+    version: 1.15.2
+    path: /Users/zhujunyang/.rubies/ruby-3.3.0/bin/pod
+SDKs:
+  iOS SDK:
+    Platforms:
+      - DriverKit 23.2
+      - iOS 17.2
+      - macOS 14.2
+      - tvOS 17.2
+      - watchOS 10.2
+  Android SDK: Not Found
+IDEs:
+  Android Studio: Not Found
+  Xcode:
+    version: 15.1/15C65
+    path: /usr/bin/xcodebuild
+Languages:
+  Java:
+    version: 18.0.2
+    path: /usr/bin/javac
+  Ruby:
+    version: 3.3.0
+    path: /Users/zhujunyang/.rubies/ruby-3.3.0/bin/ruby
+npmPackages:
+  "@react-native-community/cli": Not Found
+  react: Not Found
+  react-native: Not Found
+  react-native-macos: Not Found
+npmGlobalPackages:
+  "*react-native*": Not Found
+Android:
+  hermesEnabled: true
+  newArchEnabled: false
+iOS:
+  hermesEnabled: true
+  newArchEnabled: true
 
-## Step 1: Start the Metro Server
-
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
-
-```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+  # Version
+  "@react-native-async-storage/async-storage": "^1.22.3",
+    "@react-native-community/netinfo": "^11.3.1",
+    "@walletconnect/react-native-compat": "^2.11.2",
+    "@web3modal/wagmi-react-native": "^1.2.0",
+    "react": "18.2.0",
+    "react-native": "0.73.5",
+    "react-native-actions-sheet": "^0.9.2",
+    "react-native-gesture-handler": "^2.15.0",
+    "react-native-get-random-values": "^1.10.0",
+    "react-native-modal": "^13.0.1",
+    "react-native-svg": "^15.0.0",
+    "react-native-webview": "13.8.1",
+    "viem": "1.21.4",
+    "wagmi": "1.4.13"
